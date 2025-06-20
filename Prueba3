@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>New 4ura - Marca Urbana</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #eee;
+  }
+  header {
+    background-color: #1f1f1f;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .logo-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .logo-container img {
+    height: 50px;
+    cursor: pointer;
+  }
+  nav {
+    display: flex;
+    gap: 25px;
+  }
+  nav a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #ffb800;
+  }
+  main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  section {
+    margin-bottom: 60px;
+  }
+  h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+  }
+  #inicio {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ffb800 0%, #ff6f00 100%);
+    color: #121212;
+    border-radius: 10px;
+  }
+  #inicio h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  #inicio p {
+    font-size: 20px;
+  }
+  #catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+  .producto {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 8px #ffb800aa;
+    transition: transform 0.3s;
+  }
+  .producto:hover {
+    transform: scale(1.05);
+  }
+  .producto img {
+    width: 100%;
+    display: block;
+  }
+  .producto-info {
+    padding: 15px;
+    text-align: center;
+  }
+  .producto-info h3 {
+    margin: 0 0 8px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffb800;
+  }
+  .producto-info p {
+    margin: 0;
+    color: #ccc;
+  }
+  #nosotros {
+    background-color: #222;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  #contacto {
+    background-color: #1f1f1f;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: #ffb800;
+  }
+  #contacto p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  footer {
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #1f1f1f;
+    color: #666;
+    font-size: 14px;
+  }
+  @media (max-width: 600px) {
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      margin-left: 0;
+    }
+    #inicio h1 {
+      font-size: 36px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo-container">
+    <img src="New4ura1.jpg" alt="Logo New 4ura 1" />
+    <img src="New4ura2.jpg" alt="Logo New 4ura 2" />
+  </div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main>
+  <section id="inicio">
+    <h1>Bienvenido a New 4ura</h1>
+    <p>Somos New 4ura y dejaremos marca</p>
+  </section>
+  <section id="catalogo">
+    <h2>Catálogo</h2>
+    <div class="producto">
+      <img src="Polos.jpg" alt="Polos New 4ura" />
+      <div class="producto-info">
+        <h3>Polos Básicos</h3>
+        <p>Precio referencial: S/ 50</p>
+      </div>
+    </div>
+    <div class="producto">
+      <img src="Polera.jpg" alt="Poleras New 4ura" />
+      <div class="producto-info">
+        <h3>Poleras Streetwear</h3>
+        <p>Precio referencial: S/ 75</p>
+      </div>
+    </div>
+  </section>
+  <section id="nosotros">
+    <h2>Sobre New 4ura</h2>
+    <p>New 4ura nace para representar la esencia urbana con prendas de calidad que expresan tu personalidad y energía.</p>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:new4ura@gmail.com" style="color:#ffb800;">new4ura@gmail.com</a></p>
+    <p>Teléfono: <a href="tel:+51907005799" style="color:#ffb800;">907005799</a></p>
+  </section>
+</main>
+<footer>
+  &copy; 2025 New 4ura. Todos los derechos reservados.
+</footer>
+</body>
+</html>
